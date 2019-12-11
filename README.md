@@ -25,7 +25,7 @@ Before this project, I had never sent data from one language to another, which w
 
 #### Fritzing
 
-
+<img src="Media/Expert_CircuitPyton_Proscessing_to_CircuitPython_CopyRight_Protected.jpg" width="250">
 
 ### Processing to Circuitpython
 
@@ -38,3 +38,5 @@ The purpose of the assignment was to code a user interface which would respond t
 This assignment was definetely the hardest of the three and one of the hardest assignments I have worked on throughout the course so far. At first it wasnt very hard, making the GPU wasn't hard, and mapping the mouse movements also wasn't bad. What gave me many problems was trying to send the mapped movements to vs code where it would then be decoded as an integer and the servo would turn. At first I didn't know how to decode it, and then once I figured that out, making it an integer was much harder. I eventually found I had to use my output variable to do output.decode("utf-8") which I implemented in my code. I also had to make some changes to my processing code to send over the bytes as integers.
 
 #### Fritzing
+
+<img src="Media/Processing_to_Circuitpython.jpg" width="250">

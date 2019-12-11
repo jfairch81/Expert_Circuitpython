@@ -25,7 +25,7 @@ Before this project, I had never sent data from one language to another, which w
 
 #### Fritzing
 
-<img src="Media/Expert_CircuitPyton_Proscessing_to_CircuitPython_CopyRight_Protected.jpg" width="250">
+<img src="Media/Expert_CircuitPyton_Proscessing_to_CircuitPython_CopyRight_Protected.jpg" width="300">
 
 ### Processing to Circuitpython
 
@@ -39,4 +39,4 @@ This assignment was definetely the hardest of the three and one of the hardest a
 
 #### Fritzing
 
-<img src="Media/Processing_to_Circuitpython.jpg" width="250">
+<img src="Media/Processing_to_Circuitpython.jpg" width="300">

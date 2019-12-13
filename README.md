@@ -1,7 +1,7 @@
 # Expert_Circuitpython
 Expert Circuit_Python assignments
 
-### Hello Processing
+## Hello Processing
 
 #### Description
 
@@ -13,7 +13,7 @@ I came into this project without knowing about Processing at all. Luckily since 
 
 
 
-### Circuitpython to Processing
+## Circuitpython to Processing
 
 #### Description
 
@@ -27,7 +27,7 @@ Before this project, I had never sent data from one language to another, which w
 
 <img src="Media/Expert_CircuitPyton_Proscessing_to_CircuitPython_CopyRight_Protected.jpg" width="500">
 
-### Processing to Circuitpython
+## Processing to Circuitpython
 
 #### Description
 

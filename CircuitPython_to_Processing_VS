@@ -1,0 +1,16 @@
+import time 
+import board
+from analogio import AnalogIn
+import busio
+import simpleio
+potentiometer = AnalogIn(board.A1)  # potentiometer connected to A1, power & ground
+uart = busio.UART(board.TX, board.RX, baudrate=9600)
+
+
+
+ 
+while True:
+    output = uart.read(3)
+    if output is not None:
+        print(output)
+    time.sleep(0.1)                   # Wait a bit before checking all agai

@@ -1,0 +1,88 @@
+import processing.serial.*;
+Serial myPort = new Serial(this, Serial.list()[2], 9600);
+
+void setup() {
+  println(Serial.list());
+  size (360,540);
+  smooth();
+}
+
+void draw(){
+  
+  
+    //Graph
+    stroke(0,0,150);
+    strokeWeight(5);
+    fill(230,225,225);
+    rect(2.5,2.5,355,355);
+    
+    //Bottom
+    stroke(0,0,150);
+    strokeWeight(5);
+    rect(2.5,355,355,182.5);
+    
+    //Y
+    stroke(150,150,150);
+    strokeWeight(2);
+    line(180,5,180,352.5);
+    
+    //X
+    stroke(150,150,150);
+    strokeWeight(2);
+    line(5,180,355,180);
+    
+    float mapX = map(mouseX+1,0,360,0,181);
+    float mapY = map(mouseY+1,0,360,0,181);
+    
+    constrain(mapY,0,180);
+    constrain(mapX,0,180);
+    
+    if(mapY >= 180){
+      mapY = 180;
+      mapX = 180;
+    }
+    
+    if (mapX >= 180){
+      mapX = 180;
+    }
+    
+    mapX = int(mapX);
+    mapY = int(mapY);
+    
+    
+    println(mapX + " , " + mapY);
+    myPort.write(str(mapX) + "," + str(mapY) + "$");
+    delay(100);
+
+    
+    textSize(20);
+    fill(75);
+    text(int(mapX) + "°",180,405);
+    
+    textSize(20);
+    text("Servo X: " ,45,405);
+    
+    textSize(20);
+    fill(75);
+    text(int(mapY) + "°",180,440);
+    
+    textSize(20);
+    text("Servo Y: " ,45,440);
+    
+    
+    textSize(50);
+    fill(150);
+    text(" I " ,240,100);
+    
+    textSize(50);
+    text(" IV " ,225,280);
+    
+    textSize(50);
+    text(" III " ,50,280);
+    
+    textSize(50);
+    text(" II " ,60,100);
+    
+
+  print(1/60);
+}
